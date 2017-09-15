@@ -49,7 +49,7 @@ test: test-unit
 
 test-unit:
 	@echo Running tests:
-	go test -cover $(UNIT_TEST_FLAGS) \
+	go test -v -cover $(UNIT_TEST_FLAGS) \
 	  $(addprefix $(PKG)/,$(TEST_DIRS))
 
 apbs:
